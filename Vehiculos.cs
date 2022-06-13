@@ -10,18 +10,18 @@ namespace Proyecto_Vehiculos
     {
         private string NombreVehiculo;
         private string FuenteDeEnergia;
-        private string Capacidad;
-        private string Precio;
+        private int  Capacidad;
+        private int  Precio;
         private string Motor;
-        private string Ruedas;
+        private int Ruedas;
         private string Carroceria;
         private string Color;
-        private string Luces;
+        private bool Luces;
         private string Suspencion;
-        private string Asiento;
-        private string Espejos;
+        private int Asiento;
+        private int Espejos;
 
-        public Vehiculos(string NombreVehiculo, string FuenteDeEnergia, string Capacidad, string Precio, string Motor, string Ruedas, string Carroceria, string Color, string Luces, string Suspencion, string Asiento, string Espejos)
+        public Vehiculos(string NombreVehiculo, string FuenteDeEnergia, int Capacidad, int Precio, string Motor, int Ruedas, string Carroceria, string Color, bool Luces, string Suspencion, int Asiento, int Espejos)
         {
             this.NombreVehiculo = NombreVehiculo;
             this.FuenteDeEnergia = FuenteDeEnergia;
@@ -52,19 +52,19 @@ namespace Proyecto_Vehiculos
         {
             this.FuenteDeEnergia= FuenteDeEnergia;
         }
-        public string getCapacidad()
+        public int getCapacidad()
         {
             return Capacidad;
         }
-        public void setCapacidad(string Capacidad)
+        public void setCapacidad(int Capacidad)
         {
             this.Capacidad = Capacidad;
         }
-        public string getPrecio()
+        public int getPrecio()
         {
             return Precio;
         }
-        public void setPrecio(string Precio)
+        public void setPrecio(int Precio)
         {
             this.Precio = Precio;
         }
@@ -76,11 +76,11 @@ namespace Proyecto_Vehiculos
         {
             this.Motor = Motor;
         }
-        public string getRuedas()
+        public int getRuedas()
         {
             return Ruedas;  
         }
-        public void setRuedas(string Ruedas)
+        public void setRuedas(int Ruedas)
         {
             this.Ruedas = Ruedas;   
         }
@@ -100,11 +100,11 @@ namespace Proyecto_Vehiculos
         {
             this.Color = Color;
         }
-        public string getLuces()
+        public bool getLuces()
         {
             return Luces;
         }
-        public void setLuces(string Luces)
+        public void setLuces(bool Luces)
         {
             this.Luces = Luces;
         }
@@ -116,19 +116,19 @@ namespace Proyecto_Vehiculos
         {
             this.Suspencion = Suspencion;
         }
-        public string getAsiento()
+        public int getAsiento()
         {
             return Asiento;
         }
-        public void setAsiento(string Asiento)
+        public void setAsiento(int Asiento)
         {
             this.Asiento = Asiento; 
         }
-        public string getEspejos()
+        public int getEspejos()
         {
             return Espejos;
         }
-        public void setEspejos(string Espejos)
+        public void setEspejos(int Espejos)
         {
             this.Espejos = Espejos; 
         }

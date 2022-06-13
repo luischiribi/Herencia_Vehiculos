@@ -8,13 +8,13 @@ namespace Proyecto_Vehiculos
 {
     internal class SubClaseTerrestre : Vehiculos
     {
-        private string Cilindraje;
+        private int Cilindraje;
         private string Bateria;
         private string Frenos;
         private string SistemaDeLubricacion;
         private string SistemaDeRefrigeracion;
-        private string Rines;
-        public SubClaseTerrestre(string Cilindraje, string Bateria, string Frenos, string SistemaDeLubricacion, string SistemaDeRefrigeracion, string Rines)
+        private int Rines;
+        public SubClaseTerrestre(int Cilindraje, string Bateria, string Frenos, string SistemaDeLubricacion, string SistemaDeRefrigeracion, int Rines)
         {
             this.Cilindraje = Cilindraje;
             this.Bateria = Bateria;
@@ -23,11 +23,11 @@ namespace Proyecto_Vehiculos
             this.SistemaDeRefrigeracion = SistemaDeRefrigeracion;
             this.Rines = Rines;
         }
-        public string getCilindraje()
+        public int getCilindraje()
         {
             return Cilindraje;
         }
-        public void setCilindraje(string Cilindraje)
+        public void setCilindraje(int Cilindraje)
         {
             this.Cilindraje = Cilindraje;
         }
@@ -63,11 +63,11 @@ namespace Proyecto_Vehiculos
         {
             this.SistemaDeRefrigeracion = SistemaDeRefrigeracion;
         }
-        public string getRines()
+        public int getRines()
         {
             return Rines;
         }
-        public void setRines(string Rines)
+        public void setRines(int Rines)
         {
             this.Rines = Rines;
         }

@@ -10,16 +10,17 @@ namespace Proyecto_Vehiculos
     {
         private string FuenteEnergiaDiesel;
         private string Ejes;
-        private string CapacidadPeso;
-        private string FrenoDeAire;
-        private string Cabina;
+        private int CapacidadPeso;
+        private bool FrenoDeAire;
+        private bool Cabina;
 
-        public SubClaseCarga(string FuenteEnergiaDiesel, string Ejes, string CapacidadPeso, string FrenoDeAire)
+        public SubClaseCarga(string FuenteEnergiaDiesel, string Ejes, int CapacidadPeso, bool FrenoDeAire, bool Cabina)
         {
             this.FuenteEnergiaDiesel = FuenteEnergiaDiesel;
             this.Ejes = Ejes;
             this.CapacidadPeso = CapacidadPeso;
             this.FrenoDeAire = FrenoDeAire;
+            this.Cabina = Cabina;
         }
         public string getFuenteEnergiaDiesel()
         {
@@ -37,27 +38,27 @@ namespace Proyecto_Vehiculos
         {
             this.Ejes = Ejes;
         }
-        public string getCapacidadPeso()
+        public int getCapacidadPeso()
         {
             return CapacidadPeso;
         }
-        public void setCapacidadPeso(string CapacidadPeso)
+        public void setCapacidadPeso(int CapacidadPeso)
         {
             this.CapacidadPeso = CapacidadPeso;
         }
-        public string getFrenoDeAire()
+        public bool getFrenoDeAire()
         {
             return FrenoDeAire;
         }
-        public void setFrenoDeAire(string FrenoDeAire)
+        public void setFrenoDeAire(bool FrenoDeAire)
         {
             this.FrenoDeAire = FrenoDeAire;
         }
-        public string getCabina()
+        public bool getCabina()
         {
             return Cabina;
         }
-        public void setCabina(string Cabina)
+        public void setCabina(bool Cabina)
         {
             this.Cabina = Cabina;
         }

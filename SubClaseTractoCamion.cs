@@ -8,26 +8,26 @@ namespace Proyecto_Vehiculos
 {
     internal class SubClaseTractoCamion : SubClaseCarga
     {
-        private string Remolque;
-        private string ValvulaDeAire;
-        public SubClaseTractoCamion(string Remolque, string ValvulaDeAire)
+        private bool Remolque;
+        private bool ValvulaDeAire;
+        public SubClaseTractoCamion(bool Remolque, bool ValvulaDeAire)
         {
             this.Remolque = Remolque;
             this.ValvulaDeAire = ValvulaDeAire;
         }
-        public string getRemolque()
+        public bool getRemolque()
         {
             return Remolque;
         }
-        public void setRemolque(string Remolque)
+        public void setRemolque(bool Remolque)
         {
             this.Remolque= Remolque;
         }
-        public string getValvulaDeAire()
+        public bool getValvulaDeAire()
         {
             return ValvulaDeAire;
         }
-        public void setValvulaDeAire(string ValvulaDeAire)
+        public void setValvulaDeAire(bool ValvulaDeAire)
         {
             this.ValvulaDeAire = ValvulaDeAire;
         }

@@ -9,9 +9,9 @@ namespace Proyecto_Vehiculos
     internal class SubClaseUtilitario : SubClaseTerrestre
     {
         private string Puertas;
-        private string Manual;
+        private bool Manual;
 
-        public SubClaseUtilitario(string Puertas, string Manual)
+        public SubClaseUtilitario(string Puertas, bool Manual)
         {
             this.Puertas = Puertas;
             this.Manual = Manual;
@@ -24,11 +24,11 @@ namespace Proyecto_Vehiculos
         {
             this.Puertas = Puertas;
         }
-        public string getManual()
+        public bool getManual()
         {
             return Manual;
         }
-        public void setManual(string Manual)
+        public void setManual(bool Manual)
         {
             this.Manual = Manual;
         }
